@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+.town {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.trees {
+  width: 35px;
+  min-height: 35px;
+  background-color: #a1d468;
+}
+
+.road__td {
+  background-color: #435b6c;
+  width: 34px;
+  position: relative;
+}
+.road__td::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-right: 2px dashed white;
+  top: 0;
+  left: 48%;
+}
+.road__td::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4%;
+  height: 100%;
+  width: 80%;
+  border-left: 2px solid #ffd15e;
+  border-right: 2px solid #ffd15e;
+}
+.road__tr {
+  background-color: #435b6c;
+  height: 34px;
+  position: relative;
+}
+.road__tr::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px dashed white;
+  top: 48%;
+  left: 0;
+}
+.road__tr::after {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  border-top: 2px solid #ffd15e;
+  border-bottom: 2px solid #ffd15e;
+}
+
+.parking__td {
+  background-color: #d4d4d4;
+}
+
+.car {
+  width: 30px;
+}
+
+.houses__td {
+  background-color: #d4d4d4;
+}
+
+.houses tr:nth-child(2) td:first-child {
+  transform: rotate(-90deg);
+}
+.houses tr:nth-child(2) td:last-child {
+  transform: rotate(90deg);
+}
+.houses tr:last-child td {
+  transform: rotate(180deg);
+}
+
+.house {
+  width: 30px;
+}
+
+.football__td {
+  height: 75px;
+  background-image: url(../images/football-field.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ocean__td {
+  background-color: #5fb4ff;
+}
+
+.ice__td {
+  background-image: url(../images/ice-hockey.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
